@@ -37,3 +37,8 @@ import "../node_modules/gentelella/build/js/custom.min.js"
 
 import "../node_modules/gentelella/production/images/img.jpg"
 import "../node_modules/gentelella/production/images/inbox.png"
+
+
+$(document).ready(function() {
+    $('.side-menu').first().find(">:first-child a").click();
+});
