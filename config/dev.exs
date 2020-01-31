@@ -2,8 +2,8 @@ use Mix.Config
 
 # Configure your database
 config :oncology_pharmacy, OncologyPharmacy.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "root",
+  password: "12345678",
   database: "oncology_pharmacy_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,

@@ -15,8 +15,8 @@ defmodule OncologyPharmacyWeb.Router do
 
   scope "/", OncologyPharmacyWeb do
     pipe_through :browser
-
     get "/", PageController, :index
+    get "/category/create", CategoryController, :create
   end
 
   # Other scopes may use custom stacks.
