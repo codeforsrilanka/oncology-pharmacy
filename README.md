@@ -17,3 +17,19 @@ Documents
 
 * https://hexdocs.pm/phoenix/overview.html
 * https://github.com/ColorlibHQ/gentelella - theme
+
+
+
+## setup
+
+- https://asdf-vm.com/#/core-manage-asdf-vm
+- sudo apt install \
+  automake autoconf libreadline-dev \
+  libncurses-dev libssl-dev libyaml-dev \
+  libxslt-dev libffi-dev libtool unixodbc-dev \
+  unzip curl
+- https://github.com/asdf-vm/asdf-erlang
+- apt-get -y install build-essential autoconf m4 libncurses5-dev libwxgtk3.0-dev libgl1-mesa-dev libglu1-mesa-dev libpng-dev libssh-dev unixodbc-dev xsltproc fop
+- asdf install erlang 22.2.7
+- https://github.com/asdf-vm/asdf-elixir
+- 
