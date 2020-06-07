@@ -15,7 +15,7 @@ config :oncology_pharmacy, OncologyPharmacyWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "ggVGpG5hXW8wekezrPJXvgDQyZK8Oz7Pb5+rJ0hys4E8O6WJy+3UK5NEP4h7mGg4",
   render_errors: [view: OncologyPharmacyWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: OncologyPharmacy.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub_server: OncologyPharmacy.PubSub
 
 # Configures Elixir's Logger
 config :logger, :console,
