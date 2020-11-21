@@ -19,7 +19,7 @@ services:
       PGHOST: db
     volumes: 
       - ./:/app
-    command: "mix ecto.setup"
+    command: "mix deps.get && mix ecto.setup && mix phx.server"
     ports:
       # Mapping the port to make the Phoenix app accessible outside of the container
       - "4000:4000"

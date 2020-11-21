@@ -12,9 +12,17 @@ WORKDIR /app
 # By using --force, we don’t need to type “Y” to confirm the installation
 RUN mix local.hex --force
 
-RUN mix local.rebar --force && \
-    mix deps.get && \
-    mix ecto.setup
+RUN mix local.rebar --force
+
+RUN curl -sL https://deb.nodesource.com/setup_15.x | bash - && \
+apt-get install -yq nodejs build-essential && \
+npm install -g npm
+
+RUN cd assets && npm install
+
+COPY ./docker-entrypoint.sh /docker-entrypoint.sh
+RUN chmod +x /docker-entrypoint.sh
+ENTRYPOINT ["/docker-entrypoint.sh"]    
 
 
 
