@@ -1,5 +1,5 @@
 # We're using the Elixir 1.5.2 base image and extending it
-FROM elixir:1.9.4
+FROM docker.io/library/elixir:1.9.4
 
 
 RUN  mkdir /app
