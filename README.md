@@ -4,7 +4,7 @@ To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
   * Create and migrate your database with `mix ecto.setup`
-  * Install Node.js dependencies with `cd assets && npm install`
+  * Install Node.js dependencies with `cd assets && pnpm install && cd -`
   * generate ssl for dev server `mix phx.gen.cert localhost "*.localhost"`
   * Start Phoenix endpoint with `mix phx.server`
 
@@ -23,8 +23,14 @@ Documents
 ## setup
 - https://asdf-vm.com/#/core-manage-asdf-vm
 - https://github.com/asdf-vm/asdf-erlang
-  - asdf install erlang 22.2.7
+  - asdf install erlang 23.2.1
 - https://github.com/asdf-vm/asdf-elixir
-  - asdf install 1.9.4-otp-22
+  - asdf install 1.11.3-otp-23
+
+install nodejs lts
+npm install -g pnpm
+
+podman-compose up -d
+
 
 
