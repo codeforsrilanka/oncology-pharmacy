@@ -23,4 +23,6 @@ defmodule OncologyPharmacyWeb.Router do
   # scope "/api", OncologyPharmacyWeb do
   #   pipe_through :api
   # end
+
+  forward "/api", Absinthe.Plug, schema: OncologyPharmacyWeb.Schema
 end

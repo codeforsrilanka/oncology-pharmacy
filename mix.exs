@@ -44,7 +44,8 @@ defmodule OncologyPharmacy.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.1"},
       {:distillery, "~> 2.0"},
-      {:edeliver, ">= 1.6.0"}
+      {:edeliver, ">= 1.6.0"},
+      {:absinthe_plug, "~> 1.5"}
     ]
   end
 
