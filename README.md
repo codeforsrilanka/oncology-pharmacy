@@ -22,13 +22,10 @@ Documents
 
 ## setup
 - https://asdf-vm.com/#/core-manage-asdf-vm
-- https://github.com/asdf-vm/asdf-erlang
-  - asdf install erlang 23.2.1
-- https://github.com/asdf-vm/asdf-elixir
-  - asdf install 1.11.3-otp-23
 
-install nodejs lts
+asdf install
 npm install -g pnpm
+asdf rehism nodejs
 
 podman-compose up -d
 
